@@ -7,10 +7,7 @@
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-var realm = "bora";
-builder.AddKeycloakSystem("identity","BoraCSF!123")
-       .AddAcountConsole(realm)
-       .AddAdminConsole(realm);
+builder.AddKeycloakSystem();
 
 var app = builder.Build();
 

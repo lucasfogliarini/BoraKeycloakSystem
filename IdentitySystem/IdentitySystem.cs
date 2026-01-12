@@ -7,7 +7,8 @@
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-builder.AddKeycloakSystem();
+builder.AddBoraKeycloakSystem()
+       .AddToAspire();
 
 var app = builder.Build();
 
